@@ -31,7 +31,7 @@ button {
   border-radius: 10px;
   color: #ffffff;
   cursor: pointer;
-  border: transparent;
+  border: 1px solid transparent;
 }
 
 img {
@@ -47,7 +47,6 @@ img {
 .button:hover {
   background: transparent;
   border: 1px solid #2d5e5e;
-  /* border-color: #2d5e5e; */
 }
 
 .button.button--bordered:hover {
@@ -134,14 +133,14 @@ input::placeholder {
 
 /*header*/
 .header {
+  /* padding-top: 30px; */
   display: flex;
-  padding-top: 30px;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 100%; */
+  bottom: 707px;
 }
 
 .center {
@@ -155,8 +154,10 @@ input::placeholder {
   margin-top: 30px;
 }
 
+
 .nav {
-  float: right;
+float: right;
+  padding-left:  440px;
 }
 
 .nav ul {
@@ -168,10 +169,10 @@ input::placeholder {
   float: right;
   margin-top: 54px;
   margin-right: 135px;
-  padding-left: 305px;
 }
 
 .nav li {
+  float: left;
   list-style: none;
 }
 
@@ -186,21 +187,25 @@ input::placeholder {
 
 .nav__link--active {
   color: #6de1e3;
+  text-decoration: underline;
 }
 
 /* offer */
 .offer {
-  background: url("../img/photo_to_main.jpg");
+  background-image: url("../img/photo_to_main.jpg");
   background-position: center;
   background-size: cover;
-  line-height: 1.5;
   color: #ffffff;
-  width: 1440px;
-  height: 768px;
+  line-height: 1.5;
+  padding-top: 240px;
+  padding-bottom: 161px;
 }
 
 .offer__title {
   margin: 0 0 55px;
+  font-size: 48px;
+  max-width: 454px;
+  padding-top: 25px;
 }
 
 .offer__desc {
@@ -366,6 +371,7 @@ input::placeholder {
 .form__input.form__input--textarea {
   grid-row: 1 / 4;
   grid-column: 2 / 3;
+  resize: none;
 }
 
 .form__checkbox {
@@ -469,8 +475,6 @@ input::placeholder {
   margin: 0;
   font-weight: 300;
 }
-
-/* ===================================================== */
 /*FAQ*/
 .FAQ {
   padding-top: 60px;
@@ -540,22 +544,17 @@ input::placeholder {
 }
 
 /*discount*/
-.discount {}
-
 .discount__title {
-  font-size: 48px;
-  line-height: 72px;
+  font: 700 48px 'Oswald', sans-serif;
   color: #000000;
   text-align: center;
+ 
 }
-.discount__title h3 {
-  padding-top: 60px;
-}
+
 .discount__form {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  margin-left: 135px;
 }
 .discount__form_input {
   width: 369px;
@@ -563,7 +562,7 @@ input::placeholder {
   margin-right: 30px;
   border: 1px solid #000000;
   border-radius: 10px;
-  background: #E5E5E5;
+
 }
 .discount__form_button {
   margin-left: 2px;
@@ -582,13 +581,13 @@ input::placeholder {
 
 .discount span {
   margin-top: 25px;
-  margin-left: 370px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
+  margin-left: 405px;
   font-size: 12px;
   line-height: 30px;
   color: #2D5E5E;
+}
+.form__checkbox_label {
+  margin-bottom: 60px;
 }
 
 /*footer*/
@@ -596,6 +595,7 @@ input::placeholder {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2d5e5e;
+  height: 190px;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -616,7 +616,9 @@ input::placeholder {
 }
 
 
-
+.discount__form {
+  display: block;  
+}
 .footer__link:hover  {
   color: rgb(251, 255, 2);
   font-size: 25px;

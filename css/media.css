@@ -1,0 +1,74 @@
+@media screen and (max-width: 1250px) {
+    .center {
+        padding-left: calc(50vw - 360px);
+        padding-right: calc(50vw - 360px);
+    }
+    body {
+        font-size: 12px;
+    }
+    .offer {
+        padding-top: 180px;
+        padding-bottom: 110px;
+    }
+    .offer__title {
+        min-width: 360px;
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .offer__desc {
+        font: 20px;
+        margin-bottom: 40px;
+    }
+    .services {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services__title {
+        margin-bottom: 20px;
+    }
+    .about {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .center {
+        padding-left: calc(50vw - 200px);
+        padding-right: calc(50vw - 200px);
+    }
+    .form {
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+    }
+    .form__input.form__input--textarea,
+    .form__checkbox,
+    .form .button {
+        grid-column: unset;
+        grid-row: unset;
+    }
+    .form__input.form__input--textarea {
+        height: 200px;
+    }
+    .slider {
+        display: inline;
+        
+    }
+    .reviews__item {
+        display: block;
+      flex-wrap: nowrap;
+    }
+    
+
+    .discount__form_input {
+        margin-bottom: 20px;
+    }
+    .discount span {
+        margin-left: 0;
+    }
+    .footer__contact {
+        display: grid;
+        gap: 0px;
+    }
+}
