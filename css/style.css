@@ -67,6 +67,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 input::placeholder {
   padding: 8px 218px 8px 20.8px;
   color: #000;
@@ -81,18 +82,22 @@ input::placeholder {
   min-width: 720px;
   margin: 0 auto;
 }
+
 .slider__arrow {
   border: none;
   background: none;
   width: 17px;
 }
+
 .slider__arrow svg {
   fill: #ADDDDE;
 }
+
 .slider__elem {
   display: none;
   margin: 0 43px;
 }
+
 .slider__elem.slider__elem--active {
   display: block;
 }
@@ -102,11 +107,13 @@ input::placeholder {
   margin: 0 auto 20px;
   max-width: 944px;
 }
+
 .dropdown__title {
   font: 700 24px/1.33 'Oswald', sans-serif;
   position: relative;
   transition: .9s;
 }
+
 .dropdown__title svg {
   fill: currentColor;
   position: absolute;
@@ -116,16 +123,20 @@ input::placeholder {
   transition: .5s;
   cursor: pointer;
 }
+
 .dropdown__title::marker {
   font-size: 0;
   color: transparent;
 }
+
 .dropdown[open] .dropdown__title {
   color: #2d5e5e;
 }
+
 .dropdown[open] .dropdown__title svg {
   transform: translateY(-50%) rotate(45deg);
 }
+
 .dropdown__text {
   margin: 20px 0;
   line-height: 1.5;
@@ -156,8 +167,8 @@ input::placeholder {
 
 
 .nav {
-float: right;
-  padding-left:  440px;
+  float: right;
+  padding-left: 440px;
 }
 
 .nav ul {
@@ -475,6 +486,7 @@ float: right;
   margin: 0;
   font-weight: 300;
 }
+
 /*FAQ*/
 .FAQ {
   padding-top: 60px;
@@ -548,7 +560,7 @@ float: right;
   font: 700 48px 'Oswald', sans-serif;
   color: #000000;
   text-align: center;
- 
+
 }
 
 .discount__form {
@@ -556,14 +568,15 @@ float: right;
   justify-content: center;
   margin-top: 60px;
 }
+
 .discount__form_input {
   width: 369px;
   height: 40px;
   margin-right: 30px;
   border: 1px solid #000000;
   border-radius: 10px;
-
 }
+
 .discount__form_button {
   margin-left: 2px;
   background: #2D5E5E;
@@ -586,6 +599,7 @@ float: right;
   line-height: 30px;
   color: #2D5E5E;
 }
+
 .form__checkbox_label {
   margin-bottom: 60px;
 }
@@ -616,10 +630,7 @@ float: right;
 }
 
 
-.discount__form {
-  display: block;  
-}
-.footer__link:hover  {
+.footer__link:hover {
   color: rgb(251, 255, 2);
   font-size: 25px;
 }
