@@ -37,6 +37,9 @@
   flex-direction: column-reverse;
   align-items: center;
  }
+ .about__title {
+    text-align: center;
+ }
  /*about*/
 }
 
@@ -45,18 +48,34 @@
   padding-left: calc(50vw - 200px);
   padding-right: calc(50vw - 200px);
  }
-
+ .about__title {
+    text-align: center;
+ }
+ .nav ul {
+    display: block;
+ } 
  .form {
   grid-template-columns: 1fr;
   grid-template-rows: unset;
  }
  .form__input.form__input--textarea,
- .form__chechbox,
+ .form__checkbox,
  .form .button {
   grid-column: unset;
   grid-row: unset;
  }
  .form__input.form__input--textarea {
   height: 200px;
+ }
+
+ .discount__form, 
+ .footer__contacts {
+    display: block;
+ }
+ .discount__form_input {
+    margin-bottom: 30px;
+ }
+ .discount span  {
+    margin-left: 30px;
  }
 }

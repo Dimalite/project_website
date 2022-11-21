@@ -201,6 +201,9 @@ img {
 }
 .nav__link.nav__link--active {
  color: #6de1e3;
+ /* text-decoration: underline; */
+          /* or */
+ border-bottom: 5px solid #6de1e3;
 }
 
 /*offer*/
@@ -526,9 +529,7 @@ img {
   justify-content: center;
   margin-bottom: 25px;
 }
-.form__checkbox {
-
-}
+/* .form__checkbox {} */
 .discount__form_input {
   background: #fff;
   font-size: 18px;
@@ -551,6 +552,12 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+  cursor: pointer;
+}
+.discount__form_button:hover {
+    background: transparent;
+    border-color: #2d5e5e;
+    color: #2d5e5e;
 }
 .discount span {
   margin-top: 25px;
