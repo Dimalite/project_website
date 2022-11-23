@@ -75,7 +75,6 @@ img {
  clip: rect(0 0 0 0);
  overflow: hidden;
 }
-
 .button {
  height: 40px;
  min-width: 250px;
@@ -265,6 +264,13 @@ img {
  font-size: 24px;
  margin: 0 0 20px;
  color: #2d5e5e;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration-line: underline;
 }
 .services.services--counters .services__title,
 .services.services--articles .services__title {
@@ -584,7 +590,7 @@ img {
  list-style: none;
  display: flex;
  align-items: center;
- gap: 30px;
+ gap: 15px;
 }
 .footer__link {
  color: #fff;

@@ -1,8 +1,3 @@
-// let name = prompt("What is your name?");
-
-// alert("Hi, " + name + "! Welcome!");
-
-
 const btns = document.querySelectorAll('.slider__arrow'),
     elementsSlider = document.querySelectorAll('.slider__elem'),
     next = btns[1],
@@ -43,3 +38,4 @@ const prevSlide = () => {
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
+
