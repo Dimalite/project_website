@@ -76,7 +76,6 @@
 .dropdown__list-item:hover {
 	background: #2d5e5e;
     color: #ffffff;
-	font-size: 20px;
 }
 
 .active,

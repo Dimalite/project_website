@@ -8,10 +8,3 @@
 //     }
 // })
 
-
-function customSlider(sliderClassName) {
-    let slider = document.querySelector(sliderClassName)
-console.log(slider);
-}
-
-customSlider('.slider')
