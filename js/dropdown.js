@@ -55,7 +55,7 @@ dropdownListItems.forEach(function (listItem) {
 // Click from outside dropdown, close dropdown
 
 document.addEventListener("click", function (e) {
-	console.log("Document Click");
+	// console.log("Document Click");
 	if (e.target !== document.querySelector(".dropdown__button")) {
 		dropdownBtn.classList.remove("dropdown__button--active");
 		dropdownList.classList.remove("dropdown__list--visible");
