@@ -680,9 +680,6 @@ a:hover {
   transform: translateX(0%);
 }
 
-.tabs__item {
-  /* display: none; */
-}
 .tabs__item:nth-child(1){
   background-color: lightyellow;
 };
@@ -693,6 +690,29 @@ a:hover {
   background-color: lightgreen;
 };
 
+.tabs__item {
+  display: none;
+}
 .tabs__item.tabs__item--active{
-  display: block;
+ display: block;
+}
+
+.tabs_togglers_list{
+  display: flex;
+  gap: 20px;
+}
+
+.tabs_togglers_list li{
+  list-style-type: none;
+}
+.tabs_toggler{
+  width: 100px;
+    /* height: 40px; */
+    /* font-size: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
 }

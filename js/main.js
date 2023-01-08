@@ -10,11 +10,12 @@
 
 function counter(elemClassName) {
   let counterTarget = document.querySelectorAll(elemClassName);
+
   let counted = false;
 
   document.addEventListener("scroll", function () {
     for (i = 0; i < counterTarget.length; i++) {
-      if (counterTarget[i].offsetTop - 1000 < window.pageYOffset && !counted) {
+      if (counterTarget[i].offsetTop - 500 < window.pageYOffset && !counted) {
         startCounter(i);
       }
     }
@@ -36,7 +37,6 @@ function counter(elemClassName) {
     }, 800 / max);
   }
 }
-
 counter(".services__number");
 
 function showNotification(notificationId) {
@@ -48,23 +48,4 @@ function showNotification(notificationId) {
 }
 // showNotification('#test')
 
-function tabs(tabsId) {
-  let tabsParent = document.querySelector(tabsId);
-  let tabsContents = tabsParent.children;
 
-  let ul = document.createElement('ul');
-  ul.classList.add('tabs_togglers_list');
-
-  Array.from(tabsContents).forEach(item => {
-    let li = document.createElement('li');
-    let button = document.createElement('button');
-    button.classList.add('tabs_toggler');
-    button.innerText = item.title;
-    li.appendChild(button);
-    ul.appendChild(li);
-  });
-
-  tabsParent.insertBefore(ul, tabsContents[0]);
-}
-
-tabs('#tabs1')
